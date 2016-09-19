@@ -1,0 +1,22 @@
+.ql-editor ul.task-list > li
+  pointer-events: none
+
+.ql-editor ul.task-list > li::before
+  color: $text-color
+  border: 1px solid $text-color
+  content: " "
+  font-size: 15px
+  height: 15px
+  line-height: 1
+  position: absolute
+  text-align: center
+  vertical-align: middle
+  width: 15px
+  cursor: default
+  pointer-events: all
+
+.ql-editor ul.task-list > li.checked
+  text-decoration: line-through
+
+.ql-editor ul.task-list > li.checked::before
+  content: "✔"
