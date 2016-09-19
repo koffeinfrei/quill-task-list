@@ -1,0 +1,22 @@
+{
+  "name": "quill-task-list",
+  "homepage": "https://github.com/koffeinfrei/quill-task-list",
+  "authors": [
+    "Alexis Reigel <mail@koffeinfrei.org>"
+  ],
+  "description": "A task list module for the quill editor",
+  "main": "task_list.es6",
+  "keywords": [
+    "todo",
+    "tasklist",
+    "quill"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
