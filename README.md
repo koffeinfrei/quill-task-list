@@ -22,27 +22,13 @@ this.editor = new Quill('#editor', {
 });
 ```
 
-There is also an optional option to provide a callback after a click on a task
-list item.
-
-```javascript
-this.editor = new Quill('#editor', {
-  modules: {
-    'toolbar': [ 'task-list' ],
-    'task-list': {
-      // optional callback
-      onClick: function() { /* ... */ }
-    }
-  }
-});
-```
-
 ## TODO
-* For now the click triggers a callback, where the change is handled. The
-  proper way would be to trigger the change internally. Probably by using a
-  delta and maybe two kinds of list item classes (a normal `TaskListItem` and a
-  `CheckedTasklistItem` or something. Fixing this would also fix the history.
-  This may be easy for someone familiar with the internals of quill.
+* For now the click triggers a dummy update, because the css class toggle
+  doesn't trigger a change in quill. The proper way would be to change the
+  state of the item by using a delta directly and maybe two kinds of list item
+  classes (a normal `TaskListItem` and a `CheckedTasklistItem` or something.
+  Fixing this would also fix the history.  This may be easy for someone
+  familiar with the internals of quill.
 
 ## License
 

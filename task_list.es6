@@ -2,6 +2,7 @@ const List = Quill.import('formats/list');
 const ListItem = Quill.import('formats/list/item');
 const Parchment = Quill.import('parchment');
 const Module = Quill.import('core/module');
+const Delta = Quill.import('delta');
 
 class TaskListItem extends ListItem {
   format(name, value) {
@@ -44,12 +45,11 @@ class TaskListModule extends Module {
   constructor(quill, options) {
     super(quill, options);
 
-    this.onClick = options.onClick || function() {};
-
     this.quill.container.addEventListener('click', (e) => {
       if (e.target.matches('ul.task-list > li')) {
         e.target.classList.toggle('checked');
-        this.onClick();
+        // dummy update so that quill detects a change
+        this.quill.updateContents(new Delta().retain(1));
       }
     });
   }
