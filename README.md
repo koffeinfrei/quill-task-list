@@ -34,3 +34,7 @@ this.editor = new Quill('#editor', {
   }
 });
 ```
+
+## License
+
+[BSD 3-clause](LICENSE) (the same one that [Quill](https://github.com/quilljs/quill) uses)
