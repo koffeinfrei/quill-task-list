@@ -4,6 +4,8 @@ Adds a task / todo list to the quill editor. Behaves as the built-in bullet
 list.
 Includes a toolbar item.
 
+The list items are clickable. A click on an item toggles the item as checked.
+
 ![Toolbar icon and task list](screenshot.png)
 
 ## Usage
