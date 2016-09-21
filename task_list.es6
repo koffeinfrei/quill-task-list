@@ -61,6 +61,7 @@ Quill.register({
   'modules/task-list': TaskListModule
 });
 
+// https://github.com/quilljs/quill/blob/develop/assets/icons/list-check.svg
 Quill.import('ui/icons')['task-list'] = `
   <svg class="" viewbox="0 0 18 18">
     <line class="ql-stroke" x1="9" x2="15" y1="4" y2="4"></line>
