@@ -37,6 +37,13 @@ this.editor = new Quill('#editor', {
 });
 ```
 
+## TODO
+* For now the click triggers a callback, where the change is handled. The
+  proper way would be to trigger the change internally. Probably by using a
+  delta and maybe two kinds of list item classes (a normal `TaskListItem` and a
+  `CheckedTasklistItem` or something. Fixing this would also fix the history.
+  This may be easy for someone familiar with the internals of quill.
+
 ## License
 
 [BSD 3-clause](LICENSE) (the same one that [Quill](https://github.com/quilljs/quill) uses)
