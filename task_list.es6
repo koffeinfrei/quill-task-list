@@ -5,7 +5,7 @@ const Module = Quill.import('core/module');
 const Delta = Quill.import('delta');
 
 //create and register a new class Attributor for checked tasks
-var checkedAttributor = new Parchment.Attributor.Class('checked', 'checked');
+let checkedAttributor = new Parchment.Attributor.Class('checked', 'checked');
 Quill.register(checkedAttributor);
 
 class TaskListItem extends ListItem {
@@ -21,7 +21,7 @@ class TaskListItem extends ListItem {
   // when inserting a new list item, remove the 'checked' css class
   clone() {
     const clone = super.clone();
-    checkedAttributor.remove(clone.domNode)
+    checkedAttributor.remove(clone.domNode);
     return clone;
   }
 }
@@ -51,10 +51,12 @@ class TaskListModule extends Module {
 
     this.quill.container.addEventListener('click', (e) => {
       if (e.target.matches('ul.task-list > li')) {
-        if (checkedAttributor.value(e.target))
+        if (checkedAttributor.value(e.target)) {
           checkedAttributor.remove(e.target);
-        else
-          checkedAttributor.add(e.target, true)
+        }
+        else {
+          checkedAttributor.add(e.target, true);
+        }
       }
     });
   }
