@@ -1,0 +1,19 @@
+{
+  "name": "quill-task-list",
+  "version": "0.2.0",
+  "description": "A task list module for the quill editor",
+  "main": "task_list.es6",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koffeinfrei/quill-task-list.git"
+  },
+  "author": "Alexis Reigel",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/koffeinfrei/quill-task-list/issues"
+  },
+  "homepage": "https://github.com/koffeinfrei/quill-task-list#readme"
+}
