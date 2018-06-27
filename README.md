@@ -10,7 +10,7 @@ The list items are clickable. A click on an item toggles the item as checked.
 
 ## Usage
 
-1. Require the JavaScript (ES6) and the CSS (SASS) file in your interwebs page
+1. Require or import the JavaScript and the SASS file in your interwebs page, after the main quill.js.
 1. Configure the module when instantiating quill
 
 ```javascript

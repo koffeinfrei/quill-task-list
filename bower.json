@@ -5,7 +5,7 @@
     "Alexis Reigel <mail@koffeinfrei.org>"
   ],
   "description": "A task list module for the quill editor",
-  "main": "task_list.es6",
+  "main": "task_list.js",
   "keywords": [
     "todo",
     "tasklist",

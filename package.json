@@ -1,8 +1,8 @@
 {
   "name": "quill-task-list",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A task list module for the quill editor",
-  "main": "task_list.es6",
+  "main": "task_list.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
