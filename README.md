@@ -8,9 +8,15 @@ The list items are clickable. A click on an item toggles the item as checked.
 
 ![Toolbar icon and task list](screenshot.png)
 
+Quill doesn't have a built-in checkbox list
+([yet](https://github.com/quilljs/quill/issues/759)).
+This is a pretty lazy plugin that adds support for that. It's [not a very
+sophisticated solution](#todo) but works sufficiently well for now.
+
 ## Usage
 
-1. Require or import the JavaScript and the SASS file in your interwebs page, after the main quill.js.
+1. Require or import the JavaScript and the SASS file in your interwebs page,
+   after the main quill.js.
 1. Configure the module when instantiating quill
 
 ```javascript
@@ -22,7 +28,10 @@ this.editor = new Quill('#editor', {
 });
 ```
 
+You can see the plugin in action in [Mykonote](https://github.com/panter/mykonote).
+
 ## TODO
+
 * For now the click triggers a dummy update, because the css class toggle
   doesn't trigger a change in quill. The proper way would be to change the
   state of the item by using a delta directly and maybe two kinds of list item
@@ -32,4 +41,5 @@ this.editor = new Quill('#editor', {
 
 ## License
 
-[BSD 3-clause](LICENSE) (the same one that [Quill](https://github.com/quilljs/quill) uses)
+[BSD 3-clause](LICENSE) (the same one that
+[Quill](https://github.com/quilljs/quill) uses)
