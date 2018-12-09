@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/quill-task-list.svg)](https://badge.fury.io/js/quill-task-list)
+
 # Task list for quill
 
 Adds a task / todo list to the quill editor. Behaves as the built-in bullet
