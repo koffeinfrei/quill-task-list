@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/koffeinfrei/quill-task-list.git"
   },
-  "author": "Alexis Reigel",
+  "author": "Alexis Reigel <mail@koffeinfrei.org> (https://www.koffeinfrei.org)",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/koffeinfrei/quill-task-list/issues"
