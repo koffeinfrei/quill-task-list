@@ -15,6 +15,16 @@ Quill doesn't have a built-in checkbox list
 This is a pretty lazy plugin that adds support for that. It's [not a very
 sophisticated solution](#todo) but works sufficiently well for now.
 
+## Install
+
+```
+npm i quill-task-list
+```
+or
+```
+yarn add quill-task-list
+```
+
 ## Usage
 
 1. Require or import the JavaScript and the SASS file in your interwebs page,
